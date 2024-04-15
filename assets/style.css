@@ -1,25 +1,270 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
 header {
   background-image: url(/resources/images/photos/image-header.jpg);
-  background-size: 1240px;
-  height: 600PX;
-  margin: 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
-header li {
+header .title {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 55px;
+  color: white;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+header .container_header {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  max-width: 1440px;
+  position: relative;
+}
+header .container_header .arrow {
+  position: absolute;
+  margin-right: 50%;
+  margin-left: 48.5%;
+  padding-top: 110px;
+}
+header .top {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+header .top img {
+  height: 2rem;
+  width: 12rem;
+}
+header .navbar ul li {
+  list-style-type: none;
   float: right;
+  margin: 50px;
+  color: white;
+  font-weight: bold;
+}
+header .navbar ul li #about {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 10px 30px;
+  border-radius: 2em;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  transition-duration: 1s;
+}
+header .navbar ul li #about:hover {
+  background-color: rgb(111, 182, 223);
+}
+header .navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container .box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container .box #white_box {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+}
+.container .box #white_box .txt .title_h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  max-width: 70%;
+  text-align: center;
+}
+.container .box #white_box .txt p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  max-width: 80%;
+  padding: 0 150;
+}
+.container .box .egg {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+  display: flex;
+  flex-direction: row;
+}
+.container .box .box_txt {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-direction: column;
+}
+.container .box .box_txt .title_h3 {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  font-size: 3.5rem;
+  margin-bottom: 5rem;
+  max-width: 70%;
+  text-align: center;
+}
+.container .box .box_txt .content_box {
+  padding-left: 30px;
+}
+.container .box .box_txt p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  text-align: left;
+  margin: 10px;
+  max-width: 80%;
   padding: 10px;
 }
-header #h1 {
+.container .box .box_txt .learnmore {
+  padding-left: 20px;
+}
+.container .box .cherries {
+  width: 50%;
+  position: relative;
+}
+.container .box .cherries .txt {
+  position: absolute;
+  bottom: 4rem;
+  margin: 0 15rem;
+  color: hsl(168, 34%, 41%);
+}
+.container .box .cherries .txt .title_h3_last {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  color: hsl(168, 34%, 32%);
+  font-size: 30px;
+}
+.container .box .cherries .txt p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-weight: 500;
+}
+.container .box .orange {
+  width: 50%;
+}
+.container .box .orange .orange_content {
+  position: relative;
+}
+.container .box .orange .orange_content .txt {
+  position: absolute;
+  bottom: 4rem;
+  margin: 0 15rem;
+  color: hsl(168, 34%, 41%);
+}
+.container .box .orange .orange_content .txt .title_h3_last {
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+  color: hsl(168, 34%, 32%);
+  font-size: 30px;
+}
+.container .box .orange .orange_content .txt p {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-weight: 500;
+}
+.container .images_bas_de_page {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+}
+.container .images_bas_de_page img {
+  width: 25%;
+}
+
+.team h3 {
   text-align: center;
-  padding-top: 60px;
+  font-size: 30px;
+  letter-spacing: 8px;
+  padding-top: 50px;
+  color: hsl(210, 4%, 67%);
+}
+.team .content_team {
+  display: flex;
+  width: auto;
+  justify-content: center;
+  flex-direction: row;
+  margin: 90px 80px;
+}
+.team .content_team p {
+  max-width: 80%;
+  text-align: center;
+  color: hsl(232, 10%, 55%);
+}
+.team .content_team img {
+  border-radius: 50%;
+  scale: 0.5;
+  margin-left: 25%;
+}
+.team .content_team .name {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-weight: bold;
+}
+.team .content_team .role {
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  color: rgb(196, 196, 196);
+  font-size: 16px;
+}
+
+footer {
+  background-color: hsl(167, 44%, 70%);
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  color: hsl(169, 33%, 32%);
+  text-align: center;
+}
+footer .h3_footer {
+  margin: 0;
   font-size: 40px;
+  padding-top: 40px;
+  font-family: "Fraunces", serif;
+  font-weight: 800;
+}
+footer .nav_footer {
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+}
+footer .nav_footer li {
+  padding: 20px 40px 40px 30px;
+  text-decoration: none;
+  list-style-type: none;
+  max-width: 50%;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+footer .nav_footer li a {
+  text-decoration: none;
+  color: hsl(169, 33%, 32%);
+}
+footer #icons a i {
+  color: hsl(169, 33%, 32%);
+  padding: 25px;
+  font-size: 30px;
 }
 
 body {
+  font-size: 18px;
   margin: 0;
-}
-body #images {
-  display: flex;
-}
-body #images .images .txt {
-  max-width: 30%;
 }/*# sourceMappingURL=style.css.map */
